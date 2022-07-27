@@ -1,0 +1,42 @@
+.container {
+  background-color: #173135;
+  padding: 17px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: white;
+  padding: 5px 30px;
+  border-radius: 30px;
+  border: 0;
+}
+
+.logout {
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgb(149, 43, 43);
+  padding: 8px 30px;
+  border-radius: 30px;
+  border: 0;
+}
+
+.detail {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart:hover {
+  cursor: pointer;
+}
+
+.logout:hover {
+  cursor: pointer;
+}

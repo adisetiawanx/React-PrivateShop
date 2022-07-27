@@ -1,0 +1,66 @@
+.container {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.product {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.images {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.buy {
+  background-color: #173135;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px 25px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.buy > input {
+  text-align: center;
+  width: 35px;
+}
+
+.buy button {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 30px;
+  border-radius: 30px;
+  border: 0;
+}
+
+.buy button:hover {
+  cursor: pointer;
+}
+
+.buy button:nth-child(2) {
+  margin-left: 20px;
+  background-color: #d1c82b;
+}
+
+.buy button:nth-child(3) {
+  margin-left: 10px;
+  background-color: #c04833;
+}
+
+.buy button:nth-child(4) {
+  margin-left: 30px;
+  background-color: #26892e;
+}

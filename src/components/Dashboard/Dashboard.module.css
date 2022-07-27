@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0px 0px 4px #888888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.images {
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+  width: 100%;
+}
+
+.button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #173135;
+  padding: 5px 30px;
+  border-radius: 30px;
+  width: 30%;
+  border: 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px black;
+}
