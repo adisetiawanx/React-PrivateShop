@@ -14,7 +14,12 @@ const Dasboard = (props) => {
           <button
             className={styles.button}
             onClick={() => {
-              props.onGet(product.name, product.price, product.description);
+              props.onGet(
+                product.id,
+                product.name,
+                product.price,
+                product.description
+              );
             }}
           >
             BUY

@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useContext, useRef, useState } from "react";
 import homepage from "../../../assets/images/homepage.jpg";
+import CartCtx from "../../Contexts/CartCtx/CartContext";
 import styles from "./ViewProduct.module.css";
 
 const ViewProduct = (props) => {
+  const [amountProduct, setAmountProduct] = useState(1);
+  const amountRef = useRef();
+  const cartCtx = useContext(CartCtx);
+
+  const inputAmountHandler = () => {
+    if (amountRef.current.value > 0) {
+      setAmountProduct(+amountRef.current.value);
+    }
+  };
+
+  const addProductHandler = () => {
+    const product = {
+      id: props.id,
+      name: props.name,
+      price: props.price,
+    };
+    cartCtx.addCartItem(product, amountProduct);
+  };
+
+  const increaseAmounHandler = () => {
+    setAmountProduct((prevState) => {
+      return prevState + 1;
+    });
+  };
+
+  const decreaseAmounHandler = () => {
+    if (amountProduct > 1) {
+      setAmountProduct((prevState) => {
+        return prevState - 1;
+      });
+    }
+  };
+
   return (
     <div className={styles.container}>
       <p
@@ -22,10 +56,16 @@ const ViewProduct = (props) => {
         </div>
       </div>
       <div className={styles.buy}>
-        <input type="number" placeholder="1" />
-        <button>+</button>
-        <button>-</button>
-        <button>ADD</button>
+        <input
+          onChange={inputAmountHandler}
+          ref={amountRef}
+          value={amountProduct}
+          type="number"
+          placeholder="1"
+        />
+        <button onClick={increaseAmounHandler}>+</button>
+        <button onClick={decreaseAmounHandler}>-</button>
+        <button onClick={addProductHandler}>ADD</button>
       </div>
     </div>
   );

@@ -1,0 +1,50 @@
+.product {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  margin-right: 15px;
+  padding: 8px;
+  border-radius: 40%;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 8px 30px;
+  border-radius: 30px;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.action button:nth-child(1) {
+  background-color: rgb(31, 32, 33);
+}
+
+.action button:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 30px;
+  background-color: rgb(158, 30, 30);
+}

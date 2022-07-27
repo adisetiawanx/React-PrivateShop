@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import AuthCtx from "../Contexts/LoginCtx/AuthCtx";
+import AuthCtx from "../Contexts/AuthCtx/AuthContext";
 import styles from "./Login.module.css";
 
 const Login = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { tokenAuth, UserData } from "../../DummyData/User";
-import AuthCtx from "./AuthCtx";
+import AuthCtx from "./AuthContext";
 
 const genereTokenAuth = () => {
   //no logic here, cuz this token not generate by backend

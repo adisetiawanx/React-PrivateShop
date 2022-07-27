@@ -1,0 +1,13 @@
+.confirm {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm button:nth-child(1) {
+  background-color: rgb(158, 30, 30);
+}
+.confirm button:nth-child(2) {
+  margin-left: 15px;
+  background-color: rgb(32, 147, 61);
+}

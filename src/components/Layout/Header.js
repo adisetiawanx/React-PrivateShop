@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import AuthCtx from "../Contexts/LoginCtx/AuthCtx";
+import AuthCtx from "../Contexts/AuthCtx/AuthContext";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
@@ -9,9 +9,17 @@ const Header = (props) => {
     props.onBack();
     authCtx.logoutHandler();
   };
+
   return (
     <div className={styles.container}>
-      <button className={styles.cart}>0 Cart</button>
+      <button
+        className={styles.cart}
+        onClick={() => {
+          props.onView(true);
+        }}
+      >
+        0 Cart
+      </button>
       <div className={styles.detail}>
         <h4>Welcome, Adi</h4>
         <button className={styles.logout} onClick={buttonLogoutHandler}>
