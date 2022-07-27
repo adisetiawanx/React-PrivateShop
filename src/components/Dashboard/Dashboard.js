@@ -7,7 +7,7 @@ const Dasboard = (props) => {
   return (
     <div className={styles.container}>
       {Products.map((product) => (
-        <div className={styles.card}>
+        <div className={styles.card} key={product.id}>
           <img className={styles.images} src={homepage} alt="homepage" />
           <h3 className={styles.title}>{product.name}</h3>
           <h4>${product.price}</h4>
