@@ -1,5 +1,4 @@
 import React, { useContext, useRef, useState } from "react";
-import homepage from "../../../assets/images/homepage.jpg";
 import CartCtx from "../../Contexts/CartCtx/CartContext";
 import styles from "./ViewProduct.module.css";
 
@@ -48,7 +47,7 @@ const ViewProduct = (props) => {
         <b>Go Back</b>
       </p>
       <div className={styles.product}>
-        <img className={styles.images} src={homepage} alt="Homepage" />
+        <img className={styles.images} src={props.img} alt="Homepage" />
         <div>
           <h2>{props.name}</h2>
           <h4>{props.price}</h4>

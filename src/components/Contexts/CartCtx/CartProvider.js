@@ -18,12 +18,12 @@ const cartReducer = (prevState, action) => {
         );
         const newAmount =
           prevState.cartList[indexProduct].amount + action.amount;
-        newArr = [
-          ...prevState.cartList.filter(
-            (product) => product.id !== action.product.id
-          ),
-          { ...prevState.cartList[indexProduct], amount: newAmount },
-        ];
+        let newArr = [...prevState.cartList];
+        const updatedProduct = {
+          ...prevState.cartList[indexProduct],
+          amount: newAmount,
+        };
+        newArr[indexProduct] = updatedProduct;
         let totalPrice = 0;
         for (const product of newArr) {
           totalPrice += product.price * product.amount;

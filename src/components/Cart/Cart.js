@@ -11,6 +11,7 @@ const Cart = (props) => {
       {cartCtx.cartData.cartList.length > 0 &&
         cartCtx.cartData.cartList.map((product) => (
           <CartItem
+            product={product}
             key={product.id}
             id={product.id}
             name={product.name}

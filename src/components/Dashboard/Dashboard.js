@@ -1,6 +1,6 @@
 import React from "react";
 import { Products } from "../DummyData/Products";
-import homepage from "../../assets/images/homepage.jpg";
+
 import styles from "./Dashboard.module.css";
 
 const Dasboard = (props) => {
@@ -8,7 +8,7 @@ const Dasboard = (props) => {
     <div className={styles.container}>
       {Products.map((product) => (
         <div className={styles.card} key={product.id}>
-          <img className={styles.images} src={homepage} alt="homepage" />
+          <img className={styles.images} src={product.img} alt="homepage" />
           <h3 className={styles.title}>{product.name}</h3>
           <h4>${product.price}</h4>
           <button
@@ -18,6 +18,7 @@ const Dasboard = (props) => {
                 product.id,
                 product.name,
                 product.price,
+                product.img,
                 product.description
               );
             }}

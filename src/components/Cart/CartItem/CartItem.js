@@ -9,19 +9,21 @@ const CartItem = (props) => {
     <>
       <div className={styles.product}>
         <div className={styles.title}>
-          <div className={styles.badge}>{props.amount}x</div>
-          <p>{props.name}</p>
+          <div className={styles.badge}>{props.product.amount}x</div>
+          <p>{props.product.name}</p>
         </div>
         <div className={styles.action}>
-          <button>+</button>
+          <button onClick={() => cartCtx.addCartItem(props.product, 1)}>
+            +
+          </button>
           <button
             onClick={() => {
-              cartCtx.removeCartItem(props.id);
+              cartCtx.removeCartItem(props.product.id);
             }}
           >
             -
           </button>
-          <p>${props.price * props.amount}</p>
+          <p>${props.product.price * props.product.amount}</p>
         </div>
       </div>
     </>

@@ -30,6 +30,7 @@ h4 {
 .images {
   border-radius: 10px 10px 0 0;
   object-fit: contain;
+  height: 300px;
   width: 100%;
 }
 

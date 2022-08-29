@@ -16,8 +16,14 @@ function App() {
   const [isViewProduct, setIsViewProduct] = useState(false);
   const authCtx = useContext(AuthCtx);
 
-  const getDataProdcut = (id, title, price, desc) => {
-    product = { id: id, name: title, price: price, description: desc };
+  const getDataProdcut = (id, title, price, img, desc) => {
+    product = {
+      id: id,
+      name: title,
+      price: price,
+      img: img,
+      description: desc,
+    };
     setIsViewProduct(true);
   };
 
@@ -46,6 +52,7 @@ function App() {
               id={product.id}
               name={product.name}
               price={product.price}
+              img={[product.img]}
               description={product.description}
               onBack={falseView}
             />
