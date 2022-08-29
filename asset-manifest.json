@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/React-PrivateShop/static/css/main.d92d2a16.css",
-    "main.js": "/React-PrivateShop/static/js/main.859bdd75.js",
+    "main.js": "/React-PrivateShop/static/js/main.dc2933aa.js",
     "static/media/product2.jpg": "/React-PrivateShop/static/media/product2.3a79dd38a94e66ccff55.jpg",
     "static/media/product3.jpg": "/React-PrivateShop/static/media/product3.f9e615fcf3c387c5beb6.jpg",
     "static/media/product1.jpeg": "/React-PrivateShop/static/media/product1.b3c553c8b043dc69470a.jpeg",
     "index.html": "/React-PrivateShop/index.html",
     "main.d92d2a16.css.map": "/React-PrivateShop/static/css/main.d92d2a16.css.map",
-    "main.859bdd75.js.map": "/React-PrivateShop/static/js/main.859bdd75.js.map"
+    "main.dc2933aa.js.map": "/React-PrivateShop/static/js/main.dc2933aa.js.map"
   },
   "entrypoints": [
     "static/css/main.d92d2a16.css",
-    "static/js/main.859bdd75.js"
+    "static/js/main.dc2933aa.js"
   ]
 }
