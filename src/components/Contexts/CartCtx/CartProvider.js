@@ -68,7 +68,6 @@ const cartReducer = (prevState, action) => {
         ...prevState.cartList[productIndex],
         amount: newAmount,
       };
-      console.info(newArr);
       newArr[productIndex] = updatedProduct;
       let totalPrice = 0;
       for (const product of newArr) {
