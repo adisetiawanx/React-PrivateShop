@@ -1,8 +1,8 @@
 Live demo : https://adisetiawanx.github.io/React-PrivateShop/
 
-AKES
-username : qwerty
-password : 12345678
+AKES<br>
+username : qwerty<br>
+password : 12345678<br>
 
 <b>NOTE</b>
 
