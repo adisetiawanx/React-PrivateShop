@@ -1,11 +1,11 @@
 Live demo : https://adisetiawanx.github.io/React-PrivateShop/
 
-AKES<br>
+Access<br>
 username : qwerty<br>
 password : 12345678<br>
 
 <b>NOTE</b>
 
-Kodenya sangat tidak beraturan dan saling tempel untuk menutupi bug satu sama lain, logikanya juga tidak bagus.
+The code is very disorganized and sticks together to cover each other's bugs, the logic isn't great either.
 
-Saya tidak akan menlanjutkan ini dikarenakan project ini hanya untuk saya berlatih ketika baru awal mengenal reactjs. Selanjutnya saya mungkin akan membuat project yang serupa dan tentu saja logikanya akan lebih baik dari ini dengan kemampuan yang saya pelajari.
+I will not continue this because this project is only for me to practice when I am new to reactjs. Next time I'll probably make a similar project and of course the logic will be better than this with the skills I've learned.
